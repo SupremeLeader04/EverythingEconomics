@@ -65,15 +65,32 @@
             </div>
         </header>   
 
+        <!-- SEARCHBAR -->
         <center>
             <div class="news-search">
                 <form id="news-search-form" role="search">
                     <input type="text" id="searchbar" placeholder="Search news articles..." name="search">
-                    <button id="searchbtn" onclick="searchFunction()"><i class="uil uil-search"></i></button>
+                    <button id="searchbtn"><i class="uil uil-search"></i></button>
                 </form>
             </div>
         </center>
 
+        <!-- OPTIONAL SEARCH RESULTS -->
+        <div id="search_results">
+
+            <hr id="search_line">
+            <h1 id="search_title"><strong>Search Results</strong></h1>
+
+            <div id="output_no_results">
+                <h1 class="output_0results h11">Sorry, we don't currently have any articles on the topic you have searched for.</h1>
+                <h1 class="output_0results h12">Send us a suggestion on the news page if you would like us to create one!</h1>
+            </div>
+
+            <div id="output_yes_results">
+                <h1>test bitch</h1>
+            </div>
+
+        </div>
 
         <!-- Latest Articles Swiper -->        
         <section class="news-latest mySwiper">

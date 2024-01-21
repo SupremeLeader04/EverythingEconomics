@@ -1115,27 +1115,37 @@ hr {
 }
 
 /* =====================================================================
-========================= NEWS OUTPUT PAGE =============================
+========================= NEWS OUTPUT  =================================
 ===================================================================== */
 
+#search_results {
+    display: none;
+}
+
+#search_title {
+    text-align: center;
+    color: gold;
+    font-size: 3rem;
+}
+
+#search_line {
+    border-color: #aefae7;
+}
+
+#output_no_results {
+    display: block;
+}
+
 .h11 {
-    margin-top: 8rem;
+    margin-top: 4rem;
     color: rgb(240, 24, 24);
 }
 
 .h12 {
     margin-top: 2rem;
-    margin-bottom: 0rem;
+    margin-bottom: -3rem;
 }
 
 .output_0results {
     text-align: center;
-}
-
-.h31 {
-    margin-bottom: 4rem;
-}
-
-#output_no_results {
-    display: block;
 }

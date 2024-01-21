@@ -30,7 +30,11 @@ var swiper = new Swiper(".mySwiper", {
 var nov_int_rate = ["bank", "england", "interest", "rate", "inflation", "base", "5.25", "cpi", "monetary", "fractional", "reserve", "nov_int_rate"]
 var multi_array = [nov_int_rate]
 
-function searchFunction() {
+document.getElementById("searchbtn").addEventListener("click",
+function searchFunction(event) { 
+
+    // prevent page refresh
+    event.preventDefault();
 
     //define success array
     success = []
@@ -63,12 +67,27 @@ function searchFunction() {
             for (let a = 0; a < (array.length - 1); a++) {
                 let ref = array[a];
                 if (ref == word) {
-                    alert(ref, word)
                     success.push(array[array.length - 1]);
                 };
             };
         };
     };
+
+    // print search results
+    search_div = document.getElementById("search_results");
+    Object.assign(search_div.style, display_article)
+
+    if (success.length > 0) {
+        decline = document.getElementById("output_no_results");
+        Object.assign(decline.style, no_display_article)
+        affirm = document.getElementById("output_yes_results");
+        Object.assign(affirm.style, display_article)
+
+        for (let b = 0; b < success.length; b++) {
+            
+        }
+    }
+});
 
 /* A-Level TOP MENU */
 
