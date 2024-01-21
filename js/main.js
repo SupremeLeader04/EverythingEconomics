@@ -49,7 +49,7 @@ function searchFunction() {
     input=input.toLowerCase();
 
     // clean input
-    punctuation = /[!";:'@#~.,?<>()*&^%$£!|=+-_]/g;
+    punctuation = /[!";:'@#~.,?<>()*&^%$/¬`£!|=+-_]/g;
     clean_input = input.replace(punctuation, "");
 
     // split input into array
@@ -63,25 +63,12 @@ function searchFunction() {
             for (let a = 0; a < (array.length - 1); a++) {
                 let ref = array[a];
                 if (ref == word) {
+                    alert(ref, word)
                     success.push(array[array.length - 1]);
                 };
             };
         };
     };
-
-    if (success.length != 0) {
-        var general = document.getElementById("output_no_results")
-        alert(general)
-        Object.assign(general.style, display_article)
-        alert("hello")
-        for (let b = 0; b < success.length; b++) {
-            obj = document.getElementById(success[b])
-        }
-    };
-
-    window.location.href = '../webpages/News Pages/news_output.html';
-
-};
 
 /* A-Level TOP MENU */
 
