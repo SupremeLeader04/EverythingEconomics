@@ -1149,3 +1149,7 @@ hr {
 .output_0results {
     text-align: center;
 }
+
+.article-html {
+    display: none;
+}

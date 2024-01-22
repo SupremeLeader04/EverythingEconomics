@@ -28,7 +28,10 @@ var swiper = new Swiper(".mySwiper", {
 /* NEWS SEARCHBAR */
 
 var nov_int_rate = ["bank", "england", "interest", "rate", "inflation", "base", "5.25", "cpi", "monetary", "fractional", "reserve", "nov_int_rate"]
-var multi_array = [nov_int_rate]
+var test_1 = ["bank", "oi", "jeff", "test_1"]
+var test_2 = ["bank", "oi", "england", "james", "test_2"]
+var multi_array = [nov_int_rate, test_1, test_2]
+var string_array = ["nov_int_rate", "test_1", "test_2"]
 
 document.getElementById("searchbtn").addEventListener("click",
 function searchFunction(event) { 
@@ -46,6 +49,13 @@ function searchFunction(event) {
 
     var no_display_article = {
         "display": "none",
+    };
+
+    // reset search results
+    for (c = 0; c < string_array.length; c++) {
+        article = string_array[c];
+        article_html = document.getElementById(article);
+        Object.assign(article_html.style, no_display_article);
     };
 
     // collect input
@@ -79,13 +89,21 @@ function searchFunction(event) {
 
     if (success.length > 0) {
         decline = document.getElementById("output_no_results");
-        Object.assign(decline.style, no_display_article)
-        affirm = document.getElementById("output_yes_results");
-        Object.assign(affirm.style, display_article)
+        Object.assign(decline.style, no_display_article);
 
         for (let b = 0; b < success.length; b++) {
-            
-        }
+            article = success[b];
+            article_html = document.getElementById(article);
+            Object.assign(article_html.style, display_article);
+        };
+    };
+});
+
+var Search = document.getElementById("searchbar");
+Search.addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("searchbtn").click();
     }
 });
 
