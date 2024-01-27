@@ -1,10 +1,8 @@
 /* NEWS SEARCHBAR */
 
 var nov_int_rate = ["bank", "england", "interest", "rate", "inflation", "base", "5.25", "cpi", "monetary", "fractional", "reserve", "nov_int_rate"]
-var test_1 = ["bank", "oi", "jeff", "test_1"]
-var test_2 = ["bank", "oi", "england", "james", "test_2"]
-var multi_array = [nov_int_rate, test_1, test_2]
-var string_array = ["nov_int_rate", "test_1", "test_2"]
+var multi_array = [nov_int_rate]
+var string_array = ["nov_int_rate"]
 
 document.getElementById("searchbtn").addEventListener("click",
 function searchFunction(event) { 
@@ -82,3 +80,39 @@ Search.addEventListener("keyup", function(event) {
         document.getElementById("searchbtn").click();
     }
 });
+
+/* NEWS ARTICLE EFFECTS */
+var hover_styles = {
+    "box-shadow": "1.5rem 1.5rem 1.5rem 1.5rem rgba(256, 256, 256, 0.2)",
+    "height": "15rem",
+    "width": "90%",
+    "transition": "var(--transition)"
+};
+
+var unhover_styles = {
+    "height": "14rem",
+    "width": "75%",
+    "box-shadow": "0 0rem 0rem",
+};
+
+ar = document.getElementsByClassName("article-html")
+for (i = 0; i < ar.length; i++) {
+    ar[i].addEventListener("mouseover",
+    function Hover(event) {
+        arr = event.target;
+        Object.assign(arr.style, hover_styles);
+    });
+    ar[i].addEventListener("mouseout",
+    function Unhover(event) {
+        arrr = event.target;
+        Object.assign(arrr.style, unhover_styles);
+    });
+    ar[i].addEventListener("click",
+    function openArticle(event) {
+        result = event.target.id;
+        prefix = "../webpages/News Pages/";
+        suffix = ".html";
+        relpath = prefix.concat(result, suffix);
+        window.location.replace(relpath);
+    });
+};

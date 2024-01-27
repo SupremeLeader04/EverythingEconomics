@@ -1120,16 +1120,19 @@ hr {
 
 #search_results {
     display: none;
+    margin-bottom: -5rem;
 }
 
 #search_title {
     text-align: center;
     color: gold;
     font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
 #search_line {
     border-color: #aefae7;
+    margin-bottom: 1.5rem;
 }
 
 #output_no_results {
@@ -1152,4 +1155,15 @@ hr {
 
 .article-html {
     display: none;
+}
+
+.article-html {
+    background-color: #000f10;
+    height: 14rem;
+    width: 75%;
+    margin-bottom: 1rem;
+}
+
+.article-html:hover {
+    cursor: pointer;
 }
