@@ -99,17 +99,17 @@ ar = document.getElementsByClassName("article-html")
 for (i = 0; i < ar.length; i++) {
     ar[i].addEventListener("mouseover",
     function Hover(event) {
-        arr = event.target;
+        arr = event.target.closest("div");
         Object.assign(arr.style, hover_styles);
     });
     ar[i].addEventListener("mouseout",
     function Unhover(event) {
-        arrr = event.target;
+        arrr = event.target.closest("div");
         Object.assign(arrr.style, unhover_styles);
     });
     ar[i].addEventListener("click",
     function openArticle(event) {
-        result = event.target.id;
+        result = event.target.closest("div").id;
         prefix = "../webpages/News Pages/";
         suffix = ".html";
         relpath = prefix.concat(result, suffix);

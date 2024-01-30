@@ -177,7 +177,11 @@ header {
 
 .container__header__left h2 {
     font-size: 2rem;
-    margin: 3rem;
+    margin: 2rem;
+    margin-left: 0rem;
+    background-color: #0c0b0b;
+    padding: 2rem;
+    position: relative;
 }
 
 /* ====================== RECOMMENDED PAGES ==========================*/
@@ -407,6 +411,9 @@ footer a:hover {
 .news-header-container-right h2 {
     font-size: 2rem;
     margin: 3rem;
+    background-color: #0c0b0b;
+    margin-right: 0rem;
+    padding: 2rem;
 }
 
 .news-header-container-left img {
@@ -463,6 +470,68 @@ input {
 
 #newslist {
     display: none;
+}
+
+/* =====================================================================
+========================= NEWS OUTPUT  =================================
+===================================================================== */
+
+#search_results {
+    display: none;
+    margin-bottom: -5rem;
+}
+
+#search_title {
+    text-align: center;
+    color: gold;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#search_line {
+    border-color: #aefae7;
+    margin-bottom: 1.5rem;
+}
+
+#output_no_results {
+    display: block;
+}
+
+.h11 {
+    margin-top: 4rem;
+    color: rgb(240, 24, 24);
+}
+
+.h12 {
+    margin-top: 2rem;
+    margin-bottom: -3rem;
+}
+
+.output_0results {
+    text-align: center;
+}
+
+.article-html {
+    display: none;
+}
+
+.article-html {
+    background-color: #000f10;
+    height: 14rem;
+    width: 75%;
+    margin-bottom: 1rem;
+}
+
+.article-html:hover {
+    cursor: pointer;
+}
+
+.article_img {
+    width: 17.9rem;
+    height: auto;
+    float: left;
+    margin: 0.5rem;
+    margin-left: 3rem;
 }
 
 /* =================== NEWS LATEST SLIDER ========================= */
@@ -552,7 +621,7 @@ textarea {
 }
 
 .contact_news_right input::placeholder {
-    color: #414242;
+    color: #000000;
 }
 
 .contact-news h3 {
@@ -588,7 +657,7 @@ textarea {
     top: 1.07rem;
     left: 0.5rem;
     border-radius: 1rem;
-    color: #282929;
+    color: #000000;
 }
 
 .contact_news_right input {
@@ -603,13 +672,17 @@ textarea {
     left: 2rem;
     background-color: darkorange;
     cursor: pointer;
-    color: #282929;
+    color: rgb(0, 0, 0);
 }
 
 .contact_news_right button:hover {
     background-color: transparent;
     color: darkorange;
     border-color: darkorange;
+}
+
+#topic__suggestion::placeholder {
+    color: #000000;
 }
 
 
@@ -626,6 +699,9 @@ textarea {
     font-weight: bold;
     padding-left: 3rem;
     padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #0c0b0b;
 }
 
 #special_t {
@@ -794,7 +870,7 @@ hr {
     top: 1.07rem;
     left: 0.5rem;
     border-radius: 1rem;
-    color: #282929;
+    color: #000000;
 }
 
 .contact_a_right input {
@@ -1112,58 +1188,4 @@ hr {
     position: relative;
     left: 4rem;
     bottom: 1.5rem;
-}
-
-/* =====================================================================
-========================= NEWS OUTPUT  =================================
-===================================================================== */
-
-#search_results {
-    display: none;
-    margin-bottom: -5rem;
-}
-
-#search_title {
-    text-align: center;
-    color: gold;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
-
-#search_line {
-    border-color: #aefae7;
-    margin-bottom: 1.5rem;
-}
-
-#output_no_results {
-    display: block;
-}
-
-.h11 {
-    margin-top: 4rem;
-    color: rgb(240, 24, 24);
-}
-
-.h12 {
-    margin-top: 2rem;
-    margin-bottom: -3rem;
-}
-
-.output_0results {
-    text-align: center;
-}
-
-.article-html {
-    display: none;
-}
-
-.article-html {
-    background-color: #000f10;
-    height: 14rem;
-    width: 75%;
-    margin-bottom: 1rem;
-}
-
-.article-html:hover {
-    cursor: pointer;
 }
