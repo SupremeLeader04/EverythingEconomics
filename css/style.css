@@ -517,9 +517,14 @@ input {
 
 .article-html {
     background-color: #000f10;
-    height: 14rem;
+    height: 20rem;
     width: 75%;
     margin-bottom: 1rem;
+    position: relative;
+    border: 1px;
+    border-style: double;
+    border-radius: 1rem;
+    border-color: #aefae7;
 }
 
 .article-html:hover {
@@ -527,13 +532,38 @@ input {
 }
 
 .article_img {
-    width: 17.9rem;
-    height: auto;
-    float: left;
-    margin: 0.5rem;
-    margin-left: 3rem;
+    position: absolute;
+    top: 1.2rem;
+    left: 4.5rem;
+    width: 23rem;
+    height: 18rem;
 }
 
+.article_bar {
+    rotate: 90deg;
+    width: 19.9rem;
+    position: absolute;
+    left: 24.6%;
+    top: 8.1rem;
+    border-color: gold;
+}
+
+.article_title_text, .article_synopsis_text {
+    position: absolute;
+    width: 35%;
+}
+
+.article_title_text {
+    right: 4.6rem;
+    top: 2rem;
+    color: rgb(140, 140, 255);
+}
+
+.article_synopsis_text {
+    right: 4.6rem;
+    top: 8.5rem;
+    color: white;
+}
 /* =================== NEWS LATEST SLIDER ========================= */
 
 .latest-article img {

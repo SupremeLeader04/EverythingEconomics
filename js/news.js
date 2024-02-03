@@ -84,13 +84,11 @@ Search.addEventListener("keyup", function(event) {
 /* NEWS ARTICLE EFFECTS */
 var hover_styles = {
     "box-shadow": "1.5rem 1.5rem 1.5rem 1.5rem rgba(256, 256, 256, 0.2)",
-    "height": "15rem",
-    "width": "90%",
+    "width": "80%",
     "transition": "var(--transition)"
 };
 
 var unhover_styles = {
-    "height": "14rem",
     "width": "75%",
     "box-shadow": "0 0rem 0rem",
 };
