@@ -924,7 +924,24 @@ hr {
     border-color: darkorange;
 }
 
+/* ================================ REVISION PAGE TEMPLATE ================================= */
 
+.summary_box {
+    margin-top: 5rem;
+}
+
+.summary_fieldset {
+    border: 1px #CFFF04 solid;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.summary_title {
+    color: #CFFF04;
+    background-color: #282929;
+    margin-left: 4rem;
+    padding: 10px;
+}
 
 /*====================================================================================================
 =================================== THE GREAT ECONOMISTS =============================================
