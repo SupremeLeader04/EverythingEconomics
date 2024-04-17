@@ -941,6 +941,31 @@ hr {
     background-color: #282929;
     margin-left: 4rem;
     padding: 10px;
+    font-size: x-large;
+}
+
+.maths_box {
+    margin-top: 5rem;
+}
+
+.maths_fieldset {
+    border: 1px #FF3131 solid;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.maths_title {
+    color: #FF3131;
+    background-color: #282929;
+    margin-left: 4rem;
+    padding: 10px;
+    font-size: x-large;
+}
+
+.graph_wrapper {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 8rem;
 }
 
 /*====================================================================================================

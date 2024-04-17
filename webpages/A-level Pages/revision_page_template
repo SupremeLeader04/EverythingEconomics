@@ -25,6 +25,22 @@
 
         <!-- Styling Links -->
         <link rel="stylesheet" href="../../css/style.css">
+
+        <!-- GRAPHS -->
+        <link href="https://kineticgraphs.org/css/kg.0.2.7.css" rel="stylesheet" type="text/css">
+        <script src="https://kineticgraphs.org/js/kg.0.2.7.js"></script>
+
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: ['$$', '$$']
+              }
+            };
+        </script>
+
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+
     </head>
 
     <body>
@@ -43,12 +59,61 @@
             </div>
         </nav>
 
+        <figure class="graph_wrapper">
+        <div class="kg-container  test_graph">
+
+            params:
+
+            - name: blueX    # x-coordinate of blue point
+              value: 6
+
+            - name: redY     # y-coordinate of red point
+              value: 3
+              min: 2
+              max: 6
+              round: 0.25
+                
+            layout:
+              OneGraph:
+                graph:
+                  objects:
+                    - Point:
+                        coordinates: [params.blueX, 4]
+                        draggable: true
+                    - Point:
+                        coordinates: [3, params.redY]
+                        color: red
+                        draggable: true
+
+        </div>
+        </figure>
+
         <div class="summary_box">
             <fieldset class="summary_fieldset">
                 <legend class="summary_title">
                     Summary
                 </legend>
                 <p class="summary_contents">Lorem</p>
+            </fieldset>
+        </div>
+
+        <div class="maths_box">
+            <fieldset class="maths_fieldset">
+                <legend class="maths_title">
+                    Mathematical Skills
+                </legend>
+                <p class="maths_contents">Lorem</p>
+                <p class="maths">$$ X_{m,n} = 
+                    \begin{pmatrix}
+                    a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+                    a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+                    \vdots  & \vdots  & \ddots & \vdots  \\
+                    a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
+                    \end{pmatrix}$$
+
+                    $$\frac{\mathrm{d}} 
+                    {\mathrm{d}z}f(z) , \frac{\mathrm{d^2}}{\mathrm{d}t^2}$$
+                </p>
             </fieldset>
         </div>
 
