@@ -188,13 +188,13 @@ header {
 
 #pleaserotate-graphic{
     fill: #fff;
-    z-index: 9999999999;
+    z-index: 99999;
 }
 
 #pleaserotate-backdrop {
     color: #fff;
     background-color: #000;
-    z-index: 9999999999;
+    z-index: 99999;
 }
 
 /* ====================== RECOMMENDED PAGES ==========================*/
